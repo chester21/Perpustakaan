@@ -1,0 +1,5 @@
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.DataMappers\bin\Debug\SoFTLibrary.Framework.Infrastructure.DataMappers.dll
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.DataMappers\bin\Debug\SoFTLibrary.Framework.Infrastructure.DataMappers.pdb
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.DataMappers\obj\Debug\SoFTLibrary.Framework.Infrastructure.DataMappers.csprojResolveAssemblyReference.cache
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.DataMappers\obj\Debug\SoFTLibrary.Framework.Infrastructure.DataMappers.dll
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.DataMappers\obj\Debug\SoFTLibrary.Framework.Infrastructure.DataMappers.pdb

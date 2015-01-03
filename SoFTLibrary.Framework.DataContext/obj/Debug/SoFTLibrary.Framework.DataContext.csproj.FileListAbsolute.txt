@@ -1,0 +1,8 @@
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.DataContext\obj\Debug\SoFTLibrary.Framework.DataContext.dll
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.DataContext\obj\Debug\SoFTLibrary.Framework.DataContext.csprojResolveAssemblyReference.cache
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.DataContext\obj\Debug\SoFTLibrary.Framework.DataContext.pdb
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.DataContext\bin\Debug\SoFTLibrary.Framework.DataContext.dll
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.DataContext\bin\Debug\SoFTLibrary.Framework.DataContext.pdb
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.DataContext\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.DataContext\bin\Debug\SoFTLibrary.Framework.ComponentModels.dll
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.DataContext\bin\Debug\SoFTLibrary.Framework.ComponentModels.pdb

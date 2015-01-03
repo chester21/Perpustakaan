@@ -1,0 +1,13 @@
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\obj\Debug\SoFTLibrary.Framework.Infrastructure.ProviderDataServices.csprojResolveAssemblyReference.cache
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.Infrastructure.ProviderDataServices.dll
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.Infrastructure.ProviderDataServices.pdb
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.ComponentModels.dll
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.DataContext.dll
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.ExtentionCores.dll
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoftFocusCenter.EncryptionWrapper.dll
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.ComponentModels.pdb
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.DataContext.pdb
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.ExtentionCores.pdb
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\obj\Debug\SoFTLibrary.Framework.Infrastructure.ProviderDataServices.dll
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\obj\Debug\SoFTLibrary.Framework.Infrastructure.ProviderDataServices.pdb

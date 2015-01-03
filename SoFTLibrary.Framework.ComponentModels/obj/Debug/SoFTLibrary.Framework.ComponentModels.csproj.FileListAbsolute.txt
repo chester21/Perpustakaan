@@ -1,0 +1,5 @@
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.ComponentModels\bin\Debug\SoFTLibrary.Framework.ComponentModels.dll
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.ComponentModels\bin\Debug\SoFTLibrary.Framework.ComponentModels.pdb
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.ComponentModels\obj\Debug\SoFTLibrary.Framework.ComponentModels.dll
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.ComponentModels\obj\Debug\SoFTLibrary.Framework.ComponentModels.pdb
+H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.ComponentModels\obj\Debug\SoFTLibrary.Framework.ComponentModels.csprojResolveAssemblyReference.cache
