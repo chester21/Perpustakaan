@@ -1,0 +1,14 @@
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Sample.UI\bin\Debug\SoFTLibrary.Sample.UI.exe.config
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Sample.UI\bin\Debug\SoFTLibrary.Sample.UI.exe
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Sample.UI\bin\Debug\SoFTLibrary.Sample.UI.pdb
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Sample.UI\bin\Debug\SoFTLibrary.Framework.ComponentModels.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Sample.UI\bin\Debug\SoFTLibrary.Framework.Infrastructure.ProviderDataServices.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Sample.UI\bin\Debug\SoFTLibrary.Framework.DataContext.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Sample.UI\bin\Debug\Oracle.ManagedDataAccess.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Sample.UI\bin\Debug\SoftFocusCenter.EncryptionWrapper.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Sample.UI\bin\Debug\SoFTLibrary.Framework.ComponentModels.pdb
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Sample.UI\bin\Debug\SoFTLibrary.Framework.Infrastructure.ProviderDataServices.pdb
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Sample.UI\bin\Debug\SoFTLibrary.Framework.DataContext.pdb
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Sample.UI\obj\Debug\SoFTLibrary.Sample.UI.csprojResolveAssemblyReference.cache
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Sample.UI\obj\Debug\SoFTLibrary.Sample.UI.exe
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Sample.UI\obj\Debug\SoFTLibrary.Sample.UI.pdb

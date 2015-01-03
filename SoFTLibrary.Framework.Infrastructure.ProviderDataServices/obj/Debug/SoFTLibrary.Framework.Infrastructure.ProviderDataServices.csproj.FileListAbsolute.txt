@@ -11,3 +11,16 @@ H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDat
 H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.ExtentionCores.pdb
 H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\obj\Debug\SoFTLibrary.Framework.Infrastructure.ProviderDataServices.dll
 H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\obj\Debug\SoFTLibrary.Framework.Infrastructure.ProviderDataServices.pdb
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.Infrastructure.ProviderDataServices.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.Infrastructure.ProviderDataServices.pdb
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.ComponentModels.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.DataContext.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.ExtentionCores.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\Oracle.ManagedDataAccess.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoftFocusCenter.EncryptionWrapper.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.ComponentModels.pdb
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.DataContext.pdb
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\bin\Debug\SoFTLibrary.Framework.ExtentionCores.pdb
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\obj\Debug\SoFTLibrary.Framework.Infrastructure.ProviderDataServices.csprojResolveAssemblyReference.cache
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\obj\Debug\SoFTLibrary.Framework.Infrastructure.ProviderDataServices.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.Infrastructure.ProviderDataServices\obj\Debug\SoFTLibrary.Framework.Infrastructure.ProviderDataServices.pdb

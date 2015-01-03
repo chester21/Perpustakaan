@@ -3,3 +3,8 @@ H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.ExtentionCores\bin\Debug\S
 H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.ExtentionCores\obj\Debug\SoFTLibrary.Framework.ExtentionCores.dll
 H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.ExtentionCores\obj\Debug\SoFTLibrary.Framework.ExtentionCores.pdb
 H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.ExtentionCores\obj\Debug\SoFTLibrary.Framework.ExtentionCores.csprojResolveAssemblyReference.cache
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.ExtentionCores\bin\Debug\SoFTLibrary.Framework.ExtentionCores.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.ExtentionCores\bin\Debug\SoFTLibrary.Framework.ExtentionCores.pdb
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.ExtentionCores\obj\Debug\SoFTLibrary.Framework.ExtentionCores.csprojResolveAssemblyReference.cache
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.ExtentionCores\obj\Debug\SoFTLibrary.Framework.ExtentionCores.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.ExtentionCores\obj\Debug\SoFTLibrary.Framework.ExtentionCores.pdb

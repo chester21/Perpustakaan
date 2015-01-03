@@ -6,3 +6,11 @@ H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.DataContext\bin\Debug\SoFT
 H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.DataContext\bin\Debug\Oracle.ManagedDataAccess.dll
 H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.DataContext\bin\Debug\SoFTLibrary.Framework.ComponentModels.dll
 H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.DataContext\bin\Debug\SoFTLibrary.Framework.ComponentModels.pdb
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.DataContext\bin\Debug\SoFTLibrary.Framework.DataContext.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.DataContext\bin\Debug\SoFTLibrary.Framework.DataContext.pdb
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.DataContext\bin\Debug\Oracle.ManagedDataAccess.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.DataContext\bin\Debug\SoFTLibrary.Framework.ComponentModels.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.DataContext\bin\Debug\SoFTLibrary.Framework.ComponentModels.pdb
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.DataContext\obj\Debug\SoFTLibrary.Framework.DataContext.csprojResolveAssemblyReference.cache
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.DataContext\obj\Debug\SoFTLibrary.Framework.DataContext.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.DataContext\obj\Debug\SoFTLibrary.Framework.DataContext.pdb
