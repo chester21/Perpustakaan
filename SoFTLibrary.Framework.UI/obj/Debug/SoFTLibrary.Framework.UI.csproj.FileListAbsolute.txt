@@ -37,3 +37,8 @@ I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.UI\obj\Debug
 I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.UI\obj\Debug\SoFTLibrary.Framework.UI.pdb
 I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.UI\bin\System.Web.Mvc.dll
 I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.UI\bin\System.Web.Mvc.xml
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.UI\bin\Telerik.Web.Device.Detection.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.UI\bin\Telerik.Web.UI.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.UI\bin\Telerik.Web.UI.Skins.dll
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.UI\bin\Telerik.Web.Device.Detection.xml
+I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.UI\bin\Telerik.Web.UI.xml

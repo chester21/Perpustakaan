@@ -5,6 +5,5 @@ H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.ComponentModels\obj\Debug\
 H:\Tutorial\Product\SoftLibrary\SoFTLibrary.Framework.ComponentModels\obj\Debug\SoFTLibrary.Framework.ComponentModels.csprojResolveAssemblyReference.cache
 I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.ComponentModels\bin\Debug\SoFTLibrary.Framework.ComponentModels.dll
 I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.ComponentModels\bin\Debug\SoFTLibrary.Framework.ComponentModels.pdb
-I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.ComponentModels\obj\Debug\SoFTLibrary.Framework.ComponentModels.csprojResolveAssemblyReference.cache
 I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.ComponentModels\obj\Debug\SoFTLibrary.Framework.ComponentModels.dll
 I:\Softfocuscenter\GitLibraryApp\Perpustakaan\SoFTLibrary.Framework.ComponentModels\obj\Debug\SoFTLibrary.Framework.ComponentModels.pdb

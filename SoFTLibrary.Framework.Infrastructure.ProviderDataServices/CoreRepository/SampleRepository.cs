@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using SoFTLibrary.Framework.ComponentModels.DataModel;
 using SoFTLibrary.Framework.DataContext.MappingDataContext;
@@ -10,9 +11,19 @@ namespace SoFTLibrary.Framework.Infrastructure.ProviderDataServices.CoreReposito
     {
         private readonly SampleWrapper _dataWrapper;
 
-        public SampleRepository()
+        public SampleRepository() 
         {
             _dataWrapper = new SampleWrapper();
+        }
+
+        public async Task<Int32> GetCountBibIndomarc()
+        {
+            return await _dataWrapper.GetCountBibIndomarc();
+        }
+
+        public async Task<Int32> GetCountBibIndomarcTask()
+        {
+            return await Task.Run(()=>_dataWrapper.GetCountBibIndomarc());
         }
 
         public async Task<IEnumerable<MsSerialNoModel>> GetAllSerialNo() 
@@ -30,4 +41,7 @@ namespace SoFTLibrary.Framework.Infrastructure.ProviderDataServices.CoreReposito
             return await _dataWrapper.GetBarangByKode<BarangModel>();
         }
     }
+
+
+
 }

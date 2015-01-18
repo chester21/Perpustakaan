@@ -143,17 +143,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Master\bootstrap.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\component.css" />
     <Content Include="Content\login-2015-01-04.css" />
+    <Content Include="Content\Master\bootstrap-reset.css" />
+    <Content Include="Content\Master\font-awesome.css" />
+    <Content Include="Content\Master\jquery.easy-pie-chart.css" />
+    <Content Include="Content\Master\owl.carousel.css" />
+    <Content Include="Content\Master\slidebars.css" />
+    <Content Include="Content\Master\style-responsive.css" />
+    <Content Include="Content\Master\style.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Home.aspx" />
+    <Content Include="Images\arrow-up.png" />
     <Content Include="Images\bg-mobile.jpg" />
     <Content Include="Images\bg.jpg" />
+    <Content Include="Images\Logo-SOFTLIbrary.png" />
+    <Content Include="Images\nav-expand.png" />
+    <Content Include="Images\search-icon.jpg" />
     <Content Include="Images\text-header.png" />
     <Content Include="Login.aspx" />
+    <Content Include="logout.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -165,14 +183,37 @@
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Content\toastr.scss" />
+    <Content Include="Content\toastr.less" />
+    <Content Include="Scripts\custom-softfocus\bootstrap.min.js" />
+    <Content Include="Scripts\custom-softfocus\count.js" />
+    <Content Include="Scripts\custom-softfocus\easy-pie-chart.js" />
+    <Content Include="Scripts\custom-softfocus\jquery.customSelect.min.js" />
+    <Content Include="Scripts\custom-softfocus\jquery.dcjqaccordion.2.7.js" />
+    <Content Include="Scripts\custom-softfocus\jquery.easy-pie-chart.css" />
+    <Content Include="Scripts\custom-softfocus\jquery.js" />
+    <Content Include="Scripts\custom-softfocus\jquery.nicescroll.js" />
+    <Content Include="Scripts\custom-softfocus\jquery.scrollTo.min.js" />
+    <Content Include="Scripts\custom-softfocus\jquery.sparkline.js" />
+    <Content Include="Scripts\custom-softfocus\owl.carousel.css" />
+    <Content Include="Scripts\custom-softfocus\owl.carousel.js" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\classie.js" />
+    <Content Include="Scripts\custom-softfocus\common-scripts.js" />
+    <Content Include="Scripts\custom-softfocus\respond.min.js" />
+    <Content Include="Scripts\custom-softfocus\slidebars.min.js" />
+    <Content Include="Scripts\custom-softfocus\sparkline-chart.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-migrate.js" />
+    <Content Include="Scripts\custom-softfocus\jquery.easy-pie-chart.js" />
     <Content Include="Scripts\jquery.js" />
     <Content Include="Scripts\main-not-compiled.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
@@ -180,6 +221,8 @@
     <Content Include="Scripts\plugins.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
@@ -212,6 +255,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Site.Mobile.Master" />
     <Content Include="Views\web.config" />
+    <Content Include="SoFT.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -240,6 +284,13 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -254,6 +305,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SoFT.Master.cs">
+      <DependentUpon>SoFT.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SoFT.Master.designer.cs">
+      <DependentUpon>SoFT.Master</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

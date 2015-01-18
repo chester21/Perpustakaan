@@ -15,10 +15,39 @@ namespace SoFTLibrary.Sample.UI
 
         static void Main(string[] args)
         {
-            var task = new Task(TestingPerformanceDal);
-            task.Start();
-            Console.WriteLine("Application is running......please hold on.");
-            task.Wait();
+           
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+            var da = new SampleRepository(); 
+            Task x = da.GetCountBibIndomarc();
+            Task.WaitAny(x);
+            Console.Write(((Task<Int32>)x).Result);
+            Console.WriteLine("");
+            Console.WriteLine("Waktu Tempuh : " + sw.ElapsedTicks);
+            Console.WriteLine("=============================================");
+            sw.Stop();
+            sw.Reset();
+            sw.Restart();
+            da = new SampleRepository();
+            var xx = da.GetCountBibIndomarc();
+            Console.WriteLine(xx.Result);
+            Console.WriteLine("Waktu Tempuh : " + sw.ElapsedTicks);
+            sw.Stop();
+
+
+            sw.Stop();
+            sw.Reset();
+            sw.Restart();
+            da = new SampleRepository();
+            var xxx = da.GetCountBibIndomarcTask();
+            Console.WriteLine(xxx.Result);
+            Console.WriteLine("Waktu Tempuh : " + sw.ElapsedTicks);
+            sw.Stop();
+
+            //var task = new Task(TestingPerformanceDal);
+            //task.Start();
+            //Console.WriteLine("Application is running......please hold on.");
+            //task.Wait();
             Console.ReadLine();
         }
 

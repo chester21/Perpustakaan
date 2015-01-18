@@ -13,7 +13,7 @@
     <meta charset="UTF-8" />
     <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
+    <link href="Content/toastr.css" rel="stylesheet" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link href="Content/login-2015-01-04.css" rel="stylesheet" type='text/css' media='all' />
@@ -26,6 +26,7 @@
     <script type='text/javascript' src="Scripts/jquery.js"></script>
     <script type='text/javascript' src="Scripts/jquery-migrate.js"></script>
     <script type='text/javascript' src="Scripts/modernizr-2.6.2.js"></script>
+    <script type='text/javascript' src="Scripts/toastr.js"></script>
 </head>
 <body class="home page page-id-6 page-template page-template-template-portfolio-php chrome osx wpb-js-composer js-comp-ver-3.6.2 vc_responsive">
 
@@ -50,7 +51,8 @@
 <%--                <span style="font-size: 36px;font-weight: bold;font-family: 'glyphicons-halflings-regular'">SOFTLibrary</span>
                 <br/>
                 <span style="font-size: 13px;font-family: 'Lato', sans-serif">SISTEM INFORMASI PERPUSTAKAAN, KATALOGISASI BERBASIS INDOMARC</span>
---%>            </div>
+--%>            
+            </div>
               <div class="la-anim-6">
 			    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="500" height="500" viewbox="0 0 500 500">
 			      <path id="la-anim-6-border" transform="translate(250, 250)"/>
@@ -94,16 +96,11 @@
                                         <span style="color: red;font-size: 9pt;"><asp:Literal runat="server" ID="ltMsg"></asp:Literal></span>
                                     </div>
                                 </div>
-
-                                <div style="margin-top:5px" class="form-group">
-                                    <div class="col-sm-12">
-                                        <br/>
-                                    </div>
-                                </div>
                                 <div style="margin-top:5px" class="form-group">
                                     <div class="col-sm-12">
                                             <div style="text-align: center;font-size: 11px; color: #999;">
-                                                © <%:DateTime.Now.Year %> <br />@softofucscenter.com
+                                                © <%:DateTime.Now.Year %> @softofucscenter.com
+                                                <br/>
                                             </div> 
                                             </div> 
                                  </div>                     
@@ -112,7 +109,7 @@
                             </form>     
 
                  </div>  
-
+            
 
       </div>
 <script src="Scripts/classie.js"></script>
@@ -159,6 +156,11 @@
 		    });
 		</script>
 
+<br/><br/>    
+                <div style="text-align: center;margin-top: 150px;padding-top: 100px;">
+                <img src="Images/Logo-SOFTLIbrary.png" />
+            </div>
+
 </div>
 
  
@@ -173,11 +175,13 @@
         var tbu = document.getElementById('<%=tbusername.ClientID%>').value;
         var tbp = document.getElementById('<%=tbpassword.ClientID%>').value;
         if (tbu == '') {
-            window.radalert('Username harap di isi.', 350, 120, "Information", null, null);
+            //window.radalert('Username harap di isi.', 350, 120, "Information", null, null);
+            toastr.warning('Username harap di isi');
             return false;
         }
         if (tbp == '') {
-            window.radalert('Password harap di isi.', 350, 120, "Information", null, null);
+            //window.radalert('Password harap di isi.', 350, 120, "Information", null, null);
+            toastr.warning('Password harap di isi');
             return false;
         }
 

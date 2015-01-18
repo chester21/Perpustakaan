@@ -18,7 +18,7 @@ namespace SoFTLibrary.Framework.UI
 
         protected void BtnLogin_OnClick(object sender, EventArgs e)
         {
-
+            Response.Redirect("Home.aspx",false);
         }
     }
 }
