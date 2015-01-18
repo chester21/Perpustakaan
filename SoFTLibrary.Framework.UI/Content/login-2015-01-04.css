@@ -10,7 +10,6 @@
   /* Set a background color that will be displayed
      while the background image is loading */
   background-color: #333;
-  
     padding: 0;margin: 0;
     width: 100%;
     height: 100%;
@@ -33,7 +32,7 @@ height: 95px;
     .div-container {padding-right:0
     }
 }
-.div-container{float: left;margin-left: 35%;margin-right: 35%}
+.div-container{float: left;margin-left: 35%;margin-right: 35%;}
 .navbar{
 width: 100%;
 /*background-color: rgba(0, 0, 0, 0.6);*/
@@ -43,4 +42,5 @@ position: fixed;
 }
 .div-banner{ padding-left: 50px;padding-top: 20px;}
 .text-header-app{font-size: 40px;line-height: 30px;font-weight: 400;}
-.div-login-container{z-index: 9999;margin-top: 100px; padding: 10px; width: 325px;height: 185px;background-color: rgba(0, 0, 0, 0.3);border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px; }
+.div-login-container{z-index: 9999;margin-top: 100px; padding: 10px; width: 325px;height: 185px;background-color: rgba(3, 3, 3, 0.2);border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px; }
+/*.div-content-container{background-color: rgba(16, 106, 164, 0.3);width: 100%;height: 100%}*/

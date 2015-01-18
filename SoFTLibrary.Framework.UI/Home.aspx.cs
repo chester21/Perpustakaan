@@ -7,16 +7,9 @@ using System.Web.UI.WebControls;
 
 namespace SoFTLibrary.Framework.UI
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class Home : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-            if (!Page.IsPostBack)
-            {
-            }
-        }
-
-        protected void BtnLogin_OnClick(object sender, EventArgs e)
         {
 
         }

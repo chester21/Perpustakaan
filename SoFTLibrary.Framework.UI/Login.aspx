@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="SoFTLibrary.Framework.UI.Login" %>
 
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
 
 <!DOCTYPE html>
 <!--[if gte IE 9]>
@@ -19,13 +21,11 @@
     <script src="Scripts/modernizr.custom.js"></script>
     
 <link rel='stylesheet' href='Content/bootstrap.css' type='text/css' media='all' />    
-<%--<link rel='stylesheet' href='http://alessio86.bluxart.netdna-cdn.com/wp-content/themes/az/_include/css/bootstrap.min.css' type='text/css' media='all' />--%>
-<link rel='stylesheet' href='http://alessio86.bluxart.netdna-cdn.com/wp-content/themes/az/style.css' type='text/css' media='all' />
-<script type='text/javascript' src='http://alessio86.bluxart.netdna-cdn.com/wp-includes/js/jquery/jquery.js'></script>
-<script type='text/javascript' src='http://alessio86.bluxart.netdna-cdn.com/wp-includes/js/jquery/jquery-migrate.min.js'></script>
-<script type='text/javascript' src='http://alessio86.bluxart.netdna-cdn.com/wp-content/themes/az/_include/js/modernizr.js'></script>
-<link rel='shortlink' href='http://www.alessioatzeni.com/?p=6' />
-
+<link href="Content/Site.css" rel="stylesheet" type='text/css' media='all'/>
+    
+    <script type='text/javascript' src="Scripts/jquery.js"></script>
+    <script type='text/javascript' src="Scripts/jquery-migrate.js"></script>
+    <script type='text/javascript' src="Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body class="home page page-id-6 page-template page-template-template-portfolio-php chrome osx wpb-js-composer js-comp-ver-3.6.2 vc_responsive">
 
@@ -46,8 +46,11 @@
     <!-- Start Main -->
         <div class="navbar">
             <div class="div-banner">
-            <img src="Images/text-header.png" alt="text-header" style="max-width: 100%!important"/>
-            </div>
+<%--            <img src="Images/text-header.png" alt="text-header" style="max-width: 100%!important"/>--%>
+<%--                <span style="font-size: 36px;font-weight: bold;font-family: 'glyphicons-halflings-regular'">SOFTLibrary</span>
+                <br/>
+                <span style="font-size: 13px;font-family: 'Lato', sans-serif">SISTEM INFORMASI PERPUSTAKAAN, KATALOGISASI BERBASIS INDOMARC</span>
+--%>            </div>
               <div class="la-anim-6">
 			    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="500" height="500" viewbox="0 0 500 500">
 			      <path id="la-anim-6-border" transform="translate(250, 250)"/>
@@ -58,60 +61,81 @@
         </div>
         <div class="div-container">
             <div class="div-login-container">
-<%--                 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2" >--%>
                     <div class="panel-heading">
                         <div class="panel-title">Sign In</div>
                     </div>     
 
-                    <div style="padding-top:10px" class="panel-body">
+                        <form id="loginform" class="form-horizontal" role="form" runat="server" novalidate>
+                            <telerik:RadStyleSheetManager runat="server">
+                            </telerik:RadStyleSheetManager>
+                            <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
+                            </telerik:RadAjaxManager>
+                            <asp:ScriptManager ID="ScriptManager1" runat="server">
+                            </asp:ScriptManager>
+                            <telerik:RadWindowManager ID="RadWindowManager1" runat="server" Skin="Telerik"></telerik:RadWindowManager>                    
+                            <div style="padding-top:10px" class="panel-body">
 
                         <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
-                            
-                        <form id="loginform" class="form-horizontal" role="form" runat="server">
-                                    
+                                                                
                             <div style="margin-bottom: 5px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="loginUserId" type="text" class="form-control" name="username" value="" placeholder="username" runat="server" />
+                                        <asp:TextBox runat="server" ID="tbusername" CssClass="form-control" placeholder="username"></asp:TextBox>
                                     </div>
                                 
                             <div style="margin-bottom: 5px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock" style="width: 13px;"></i></span>
-                                        <input id="loginpassword" type="password" class="form-control" name="password" placeholder="password" runat="server" />
+                                        <asp:TextBox runat="server" ID="tbpassword" CssClass="form-control" TextMode="Password" placeholder="password"></asp:TextBox>
                                     </div>
 
                                 <div style="margin-top:5px" class="form-group">
                                     <div class="col-sm-12 controls">
-                                        <asp:Button runat="server" CssClass="btn btn-success" ID="BtnLogin" Text="Login"/>
+                                        <asp:Button runat="server" CssClass="btn btn-success" ID="BtnLogin" Text="Login" OnClientClick="return ValidateInput()" OnClick="BtnLogin_OnClick"/>
                                         <br/>
                                         <span style="color: red;font-size: 9pt;"><asp:Literal runat="server" ID="ltMsg"></asp:Literal></span>
                                     </div>
                                 </div>
-                            </form>     
+
+                                <div style="margin-top:5px" class="form-group">
+                                    <div class="col-sm-12">
+                                        <br/>
+                                    </div>
+                                </div>
+                                <div style="margin-top:5px" class="form-group">
+                                    <div class="col-sm-12">
+                                            <div style="text-align: center;font-size: 11px; color: #999;">
+                                                © <%:DateTime.Now.Year %> <br />@softofucscenter.com
+                                            </div> 
+                                            </div> 
+                                 </div>                     
+
                         </div>                     
-<%--                    </div>  --%>
+                            </form>     
+
                  </div>  
-        </div>
+
+
+      </div>
 <script src="Scripts/classie.js"></script>
 		<script>
 		    var loader = document.getElementById('la-anim-6-loader')
-				, border = document.getElementById('la-anim-6-border')
-				, α = 0
-				, π = Math.PI
-				, t = 15
+		        , border = document.getElementById('la-anim-6-border')
+		        , α = 0
+		        , π = Math.PI
+		        , t = 15
 
-				, tdraw;
+		        , tdraw;
 
 		    function PieDraw() {
 		        α++;
 		        α %= 360;
 		        var r = (α * π / 180)
-				, x = Math.sin(r) * 250
-				, y = Math.cos(r) * -250
-				, mid = (α > 180) ? 1 : 0
-				, anim = 'M 0 0 v -250 A 250 250 1 '
-				       + mid + ' 1 '
-				       + x + ' '
-				       + y + ' z';
+		            , x = Math.sin(r) * 250
+		            , y = Math.cos(r) * -250
+		            , mid = (α > 180) ? 1 : 0
+		            , anim = 'M 0 0 v -250 A 250 250 1 '
+		                + mid + ' 1 '
+		                + x + ' '
+		                + y + ' z';
 
 		        loader.setAttribute('d', anim);
 		        border.setAttribute('d', anim);
@@ -136,8 +160,27 @@
 		</script>
 
 </div>
+
+ 
 <!-- End Wrap all -->
 </body>
 </html>
-<script type='text/javascript' src='http://alessio86.bluxart.netdna-cdn.com/wp-content/themes/az/_include/js/plugins.js'></script>
-<script type='text/javascript' src='http://alessio86.bluxart.netdna-cdn.com/wp-content/themes/az/_include/js/main-not-compiled.js'></script>
+
+<script type='text/javascript' src="Scripts/plugins.js"></script>
+<script type='text/javascript' src="Scripts/main-not-compiled.js"></script>
+<script type="text/javascript">
+    function ValidateInput() {
+        var tbu = document.getElementById('<%=tbusername.ClientID%>').value;
+        var tbp = document.getElementById('<%=tbpassword.ClientID%>').value;
+        if (tbu == '') {
+            window.radalert('Username harap di isi.', 350, 120, "Information", null, null);
+            return false;
+        }
+        if (tbp == '') {
+            window.radalert('Password harap di isi.', 350, 120, "Information", null, null);
+            return false;
+        }
+
+        return true;
+    }
+</script>
