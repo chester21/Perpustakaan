@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Core\GenericDbProvider.cs" />
     <Compile Include="Infrastructure\ConnectionStringx.cs" />
+    <Compile Include="MappingDataContext\GenerateWrapper.cs" />
     <Compile Include="MappingDataContext\SampleWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -17,7 +17,7 @@ namespace SoFTLibrary.Framework.DataContext.Core
         /// </summary>
         /// <param name="commandTexts">SQL syntax</param>
         /// <returns>Number of rows affected</returns>
-        public int ExecuteNonQuery(params string[] commandTexts)
+        protected int ExecuteNonQuery(params string[] commandTexts)
         {
             try
             {
@@ -62,7 +62,7 @@ namespace SoFTLibrary.Framework.DataContext.Core
         /// <param name="commandText">Command text</param>
         /// <param name="parameters">Sql parameter</param>
         /// <returns>The number of rows affected</returns>
-        public int ExecuteNonQuery(string commandText, params SqlParameter[] parameters)
+        protected int ExecuteNonQuery(string commandText, params SqlParameter[] parameters)
         {
             try
             {
@@ -100,10 +100,10 @@ namespace SoFTLibrary.Framework.DataContext.Core
         /// <summary>
         /// Executes query that returns scalar
         /// </summary>
-        /// <param name="commandText">Command text</param>
+        /// <param name="query"></param>
         /// <param name="parameters">Sql parameter</param>
         /// <returns>Object</returns>
-        public object ExecuteScalar(string query, params SqlParameter[] parameters)
+        protected object ExecuteScalar(string query, params SqlParameter[] parameters)
         {
             try
             {
@@ -138,11 +138,11 @@ namespace SoFTLibrary.Framework.DataContext.Core
         /// <summary>
         /// Executes query returns scalar
         /// </summary>
-        /// <param name="commandText">Sql query</param>
-        /// <param name="type">Sql Command Type</param>
+        /// <param name="commandText">Sql query : Atau nama Stored Procedure</param>
+        /// <param name="type">Sql Command Type : Tentukan Jenis CommandType nya, apakah CommandText, atau StoredProcedure</param>
         /// <param name="parameters">Sql Parameters</param>
         /// <returns>Object</returns>
-        public object ExecuteScalar(string commandText, CommandType type, params SqlParameter[] parameters)
+        protected object ExecuteScalar(string commandText, CommandType type, params SqlParameter[] parameters)
         {
             using (SqlConnection connection = new SqlConnection(base.ConnectionString))
             {
@@ -157,13 +157,34 @@ namespace SoFTLibrary.Framework.DataContext.Core
             }
         }
 
+        /// <summary>
+        /// Executes query returns scalar ,Untuk Eksekusi Stored Procedure yang return value nya hanya satu object saja.
+        /// </summary>
+        /// <param name="commandText">: Nama Stored Procedure nya.</param>
+        /// <returns>Object : Hasil return berupa obejct.</returns>
+        protected object ExecuteScalar(string commandText)
+        {
+            using (SqlConnection connection = new SqlConnection(base.ConnectionString))
+            {
+                connection.Open();
+                object data;
+                using (SqlCommand command = new SqlCommand(commandText, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    data = command.ExecuteScalar();
+                }
+                connection.Close();
+                connection.Dispose();
+                return data;
+            }
+        }
 
         /// <summary>
         /// Gets table from sql query
         /// </summary>
         /// <param name="query">Sql query</param>
         /// <returns>Data Table</returns>
-        public DataTable ReadQueryIntoDataTable(string query, params SqlParameter[] parameters)
+        protected DataTable ReadQueryIntoDataTable(string query, params SqlParameter[] parameters)
         {
             try
             {
@@ -259,13 +280,13 @@ namespace SoFTLibrary.Framework.DataContext.Core
         /// <param name="query">Sql query</param>
         /// <param name="parameters"></param>
         /// <returns>Object</returns>
-        public async Task<T> MapQueryResult<T>(string query, params SqlParameter[] parameters) where T : class
+        protected async Task<T> MapQueryResult<T>(string query, params SqlParameter[] parameters) where T : class
         {
             return await Task.Run(() => this.MapQueryMultipleResult<T>(query, parameters).Result.FirstOrDefault());
             //return this.MapQueryMultipleResult<T>(query, parameters).FirstOrDefault();
         }
 
-        public async Task<T> MapQueryResult<T>(string query) where T : class
+        protected async Task<T> MapQueryResult<T>(string query) where T : class
         {
             return await Task.Run(() => this.MapQueryMultipleResult<T>(query).Result.FirstOrDefault());
             //return this.MapQueryMultipleResult<T>(query).FirstOrDefault();
@@ -276,7 +297,7 @@ namespace SoFTLibrary.Framework.DataContext.Core
         /// <typeparam name="T">Object type</typeparam>
         /// <param name="query">Sql query</param>
         /// <returns>IEnumerable of object</returns>
-        public async Task<IEnumerable<T>> MapQueryMultipleResult<T>(string query, params SqlParameter[] parameters) where T : class
+        protected async Task<IEnumerable<T>> MapQueryMultipleResult<T>(string query, params SqlParameter[] parameters) where T : class
         {
             try
             {
@@ -298,13 +319,43 @@ namespace SoFTLibrary.Framework.DataContext.Core
             }
         }
 
+
+        protected async Task<Int32> MapTotalRowCount(string spname)
+        {
+            Int32 intTotalProfile;
+            using (SqlConnection connection = new SqlConnection(base.ConnectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(spname, connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        var reader = command.ExecuteReader();
+                        reader.Read();
+                        intTotalProfile = Convert.ToInt32(reader[0]);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message, ex.InnerException);
+                }
+                finally
+                {
+                    connection.Close();
+                    connection.Dispose();
+                }
+            }
+            return await Task.Run(()=>intTotalProfile);
+        }
+
         /// <summary>
         /// Gets IEnumerable of object entities mapped from SqlDataReader based on sql query Without Parameter
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="query"></param>
         /// <returns></returns>
-        public async Task<IEnumerable<T>> MapQueryMultipleResult<T>(string query) where T : class
+        protected async Task<IEnumerable<T>> MapQueryMultipleResult<T>(string query) where T : class
         {
             try
             {
@@ -325,6 +376,58 @@ namespace SoFTLibrary.Framework.DataContext.Core
             }
         }
 
+
+        /// <summary>
+        /// Eksekusi Stored Procedure, yang mana hasil Kebalikan nya hanya satu row saja dengan banyak columns....
+        /// </summary>
+        /// <typeparam name="T"><b></b>Class untuk menampung hasil dari eksekusi stored procedure nya</typeparam>
+        /// <param name="spName"><b></b>Nama Store Procedure nya</param>
+        /// <param name="parameters"> SqlParameter, parameter yang ada di Stored Procedure nya</param>
+        /// <returns></returns>
+        protected async Task<T> MapStoredProcedureOneRow<T>(string spName, params SqlParameter[] parameters) where T : class
+        {
+            return await Task.Run(() => this.MapStoredProcedure<T>(spName, parameters).Result.FirstOrDefault());
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="spName"></param>
+        /// <returns></returns>
+        protected async Task<T> MapStoredProcedureOneRow<T>(string spName) where T : class
+        {
+            return await Task.Run(() => this.MapStoredProcedure<T>(spName).Result.FirstOrDefault());
+            //return this.MapQueryMultipleResult<T>(query).FirstOrDefault();
+        }
+
+        /// <summary>
+        /// Mengeksekusi Store Procedure tanpa paramater.
+        /// </summary>
+        /// <typeparam name="T"> Class untuk menampung kebalikan dari hasil eksekusi</typeparam>
+        /// <param name="storedProcedureName"> 'Nama Stored Procedure nya'</param>
+        /// <returns></returns>
+        private async Task<IEnumerable<T>> MapStoredProcedure<T>(string storedProcedureName) where T : class
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(base.ConnectionString))
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(storedProcedureName, connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        IDataReader reader = command.ExecuteReader();
+                        return await MapDataReader<T>(reader);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message, ex.InnerException);
+            }
+        }
+
         /// <summary>
         /// Gets IEnumerable of object entities mapped from SqlDataReader based on stored procedure that returns table
         /// </summary>
@@ -332,7 +435,7 @@ namespace SoFTLibrary.Framework.DataContext.Core
         /// <param name="storedProcedureName">Stored Procedure name</param>
         /// <param name="parameters">Sql Parameters</param>
         /// <returns>IEnumerable of object</returns>
-        public async Task<IEnumerable<T>> MapStoredProcedure<T>(string storedProcedureName, params SqlParameter[] parameters) where T : class
+        protected async Task<IEnumerable<T>> MapStoredProcedure<T>(string storedProcedureName, params SqlParameter[] parameters) where T : class
         {
             try
             {
@@ -360,7 +463,7 @@ namespace SoFTLibrary.Framework.DataContext.Core
         /// <param name="storedProcedureName">Stored procedure name</param>
         /// <param name="parameters">Sql parameters</param>
         /// <returns>Data Table</returns>
-        public DataTable ExecuteStoredProcedure(string storedProcedureName, params SqlParameter[] parameters)
+        protected DataTable ExecuteStoredProcedure(string storedProcedureName, params SqlParameter[] parameters)
         {
             try
             {
@@ -394,7 +497,7 @@ namespace SoFTLibrary.Framework.DataContext.Core
         /// <param name="storedProcedureName">Stored procedure name</param>
         /// <param name="parameters">Sql parameters</param>
         /// <returns>The number of rows affected</returns>
-        public int ExecuteStoredProcedureNonQuery(string storedProcedureName, params SqlParameter[] parameters)
+        protected async Task<int> ExecuteStoredProcedureNonQuery(string storedProcedureName, params SqlParameter[] parameters)
         {
             try
             {
@@ -417,7 +520,7 @@ namespace SoFTLibrary.Framework.DataContext.Core
                                 transaction.Commit();
                             }
 
-                            return 1; //tidak return i karena menghindari SET NOCOUNT ON di stored procedure
+                            return await Task.Run(()=>1); //tidak return i karena menghindari SET NOCOUNT ON di stored procedure
                         }
                         catch (Exception ex)
                         {

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using SoFTLibrary.Framework.DataContext.Core;
 
@@ -6,6 +7,10 @@ namespace SoFTLibrary.Framework.DataContext.MappingDataContext
 {
     public class SampleWrapper : GenericDbProvider
     {
+        public async Task<Int32> GetCountBibIndomarc()
+        {
+            return await MapTotalRowCount("uspGetCountPage_BIBINDOMARCRECDATA");
+        }
 
         public async Task<IEnumerable<T>> GetBarang<T>() where T : class 
         {
@@ -93,4 +98,9 @@ namespace SoFTLibrary.Framework.DataContext.MappingDataContext
         }
 
     }
+
+
+
+
+
 }
